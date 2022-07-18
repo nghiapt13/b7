@@ -8,21 +8,29 @@
     <link rel="stylesheet" href="./src/css/style.css">
     <link rel="stylesheet"
         href="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.0.7/dist/css/themes/splide-default.min.css">
+    <script src="./src/js/script.js"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <title>LIVERPOOL | YNWA</title>
 </head>
 
 <body>
-    <div class="header">
+    <!-- bài này e làm hơi ẩu anh chị thông cảm -->
+    <header class="header">
         <img src="./src/img/liv.png" alt="" class="liv">
         <h1> LFC STORE</h1>
-    </div>
+    </header>
     <div class="content">
         <div class="img">
             <section class="splide" aria-label="Splide Basic HTML Example">
                 <div class="splide__track">
                     <ul class="splide__list">
+                        <li class="splide__slide"><img src="./src/img/h_front.jpg" alt=""></li>
+                        <li class="splide__slide"><img src="./src/img/h_back.png" alt=""></li>
+                        <li class="splide__slide"><img src="./src/img/h_deco1.jpg" alt=""></li>
+                        <li class="splide__slide"><img src="./src/img/h_deco2.jpg" alt=""></li>
+                        <li class="splide__slide"><img src="./src/img/h_deco3.jpg" alt=""></li>
+                        <li class="splide__slide"><img src="./src/img/h_deco4.jpg" alt=""></li>
                         <li class="splide__slide"><img src="./src/img/front.jpg" alt=""></li>
                         <li class="splide__slide"><img src="./src/img/back.png" alt=""></li>
                         <li class="splide__slide"><img src="./src/img/deco_1.jpg" alt=""></li>
@@ -32,11 +40,29 @@
                     </ul>
                 </div>
             </section>
-
+            <!-- thumbnail không có chức năng bấm đổi ảnh nha mấy anh chị -->
             <section id="thumbnail-carousel" class="splide"
                 aria-label="The carousel with thumbnails. Selecting a thumbnail will change the Beautiful Gallery carousel.">
                 <div class="splide__track">
                     <ul class="splide__list">
+                        <li class="splide__slide">
+                            <img src="./src/img/h_front.jpg" alt="">
+                        </li>
+                        <li class="splide__slide">
+                            <img src="./src/img/h_back.png" alt="">
+                        </li>
+                        <li class="splide__slide">
+                            <img src="./src/img/h_deco1.jpg" alt="">
+                        </li>
+                        <li class="splide__slide">
+                            <img src="./src/img/h_deco2.jpg" alt="">
+                        </li>
+                        <li class="splide__slide">
+                            <img src="./src/img/h_deco3.jpg" alt="">
+                        </li>
+                        <li class="splide__slide">
+                            <img src="./src/img/h_deco4.jpg" alt="">
+                        </li>
                         <li class="splide__slide">
                             <img src="./src/img/front.jpg" alt="">
                         </li>
@@ -73,7 +99,6 @@
                 <span class="oldprice"><del>$29.00</del></span>
             </div>
             <div class="info__in4">
-                <br>
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In sit amet fermentum orci. Sed ultrices
                     tortor vitae nisl imperdiet tincidunt. Aliquam tristique magna arcu, id fringilla sem convallis
                     efficitur. Fusce in vestibulum sem. Suspendisse a venenatis velit. Suspendisse rutrum, erat nec
@@ -110,16 +135,25 @@
                     </div>
                 </div>
                 <br>
+                <!-- nút tăng giảm chưa được giống lắm -->
+                <div class="buttons_added">
+                    <p>Quantity</p>
+                    <!-- <input class="minus is-form" type="button" value="-"> -->
+                    <input aria-label="quantity" class="input-qty" max="10" min="1" name="" type="number" value="1">
+                    <!-- <input class="plus is-form" type="button" value="+"> -->
+                  </div>
                 <button class="btt">ADD TO CARD</button>
             </div>
         </div>
     </div>
-    <div class="footer">
-        <div class="fotter__head">
-            <span>Description</span>
-            <span>Review (69)</span>
+    <!-- footer e xấu lắm -->
+    <div class="des">
+        <div class="des__head">
+            <span class="h1">Description</span>
+            <span class="h2">Review (69)</span>
         </div>
-        <div class="footer__info">
+        <hr>
+        <div class="des__info">
             <p>In eget lectus eu nulla cursus venenatis eget non ipsum. In et ultrices nibh. Cras sem justo, mollis ac
                 sapien eleifend, viverra laoreet orci. Pellentesque pharetra neque nisl, non elementum magna vehicula
                 quis. Proin nisi tellus, faucibus a eleifend vel, pellentesque id sem. Nunc sit amet massa non lectus
@@ -130,25 +164,10 @@
                 non. Fusce aliquet massa id sem iaculis scelerisque.</p>
         </div>
     </div>
+    <footer class="footer">
+        <p>FROM <a class="link-bitc" href="https://www.facebook.com/BTECInformationTechnologyClub">BITC</a> WITH LUV <3</p>
+    </footer>
     <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.0.7/dist/js/splide.min.js"></script>
-
-    <script>
-        document.addEventListener('DOMContentLoaded', function () {
-            var splide = new Splide('.splide');
-            splide.mount();
-        });
-        document.addEventListener('DOMContentLoaded', function () {
-            new Splide('#thumbnail-carousel', {
-                fixedWidth: 100,
-                gap: 10,
-                rewind: true,
-                pagination: false,
-                isNavigation: true,
-                return:true,
-            }).mount();
-        });
-    </script>
-
 </body>
 
 </html>
