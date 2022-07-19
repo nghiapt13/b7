@@ -12,11 +12,12 @@ html {
 
 .header {
   text-align: center;
-  /* position: fixed; */
+  position: fixed;
   overflow: hidden;
   width: 100%;
   background-color: #fff;
   top: 0;
+  z-index: 9;
 }
 
 .header img {
@@ -26,7 +27,7 @@ html {
 
 .content {
   display: flex;
-  margin-top: 6rem;
+  margin-top: 10rem;
 }
 
 .content .img {
@@ -147,4 +148,5 @@ hr {
 }
 .link-bitc{
   color: green;
+  text-decoration: none;
 }
